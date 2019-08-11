@@ -2,6 +2,7 @@ package br.com.cadastro.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +19,7 @@ import br.com.cadastro.model.Telefone;
 import br.com.cadastro.repository.PessoaRepository;
 import br.com.cadastro.service.PessoaService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("pessoa")
 public class PessoaController {
