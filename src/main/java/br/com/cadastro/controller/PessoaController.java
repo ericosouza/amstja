@@ -39,7 +39,7 @@ public class PessoaController {
 	public ResponseEntity<?> salvar(@RequestBody Pessoa pessoa) {
 		try {
 			this.service.salvar(pessoa);
-			return ResponseEntity.ok("Registro salvo com sucesso!");
+			return ResponseEntity.ok(pessoa);
 		} catch (Exception e) {
 			return ResponseEntity.badRequest().body(e.getMessage());
 		}
