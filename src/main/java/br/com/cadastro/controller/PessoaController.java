@@ -43,7 +43,6 @@ public class PessoaController {
 		} catch (Exception e) {
 			return ResponseEntity.badRequest().body(e.getMessage());
 		}
-
 	}
 	
 	@PostMapping("/adicionarEndereco")
